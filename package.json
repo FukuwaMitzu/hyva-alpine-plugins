@@ -1,0 +1,19 @@
+{
+    "name": "@fukuwamitzu/hyva-alpinejs-plugins",
+    "version": "1.0.0",
+    "description": "Hyva's Alpine.js utility plugins",
+    "keywords": [],
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "glob": "^9.3.2",
+        "rollup": "^3.20.2"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.4.0"
+    },
+    "scripts": {
+        "build": "rollup -c scripts/rollup.config.js"
+    }
+}

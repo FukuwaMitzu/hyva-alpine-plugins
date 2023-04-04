@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  node:
+    image: "node:alpine"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+      - NPM_CONFIG_PREFIX=/home/node/.npm-global
+    volumes:
+      - ./:/home/node/app
+    entrypoint:  ["tail", "-f", "/dev/null"]
+    network_mode: bridge
